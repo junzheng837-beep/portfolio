@@ -42,7 +42,7 @@ export default function About() {
               <div className="about-info-item">
                 <span className="about-info-label">求职意向</span>
                 <span className="about-info-value">
-                  建筑机器人嵌入式软件开发（实习）
+                  {profile.jobIntent.replace('求职意向：', '')}
                 </span>
               </div>
               <div className="about-info-item">

@@ -4,7 +4,10 @@ import { useEffect, useRef } from 'react'
 export default function ProjectModal({ project, onClose }) {
   const videoRef = useRef(null)
 
+  const isOpen = Boolean(project?.detail)
+
   useEffect(() => {
+    if (!isOpen) return
     const onKey = (e) => {
       if (e.key === 'Escape') onClose()
     }
@@ -14,7 +17,7 @@ export default function ProjectModal({ project, onClose }) {
       document.removeEventListener('keydown', onKey)
       document.body.style.overflow = ''
     }
-  }, [onClose])
+  }, [isOpen, onClose])
 
   if (!project?.detail) return null
 
