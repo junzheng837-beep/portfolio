@@ -27,7 +27,7 @@ export const skills = [
     icon: '🔧',
     name: '单片机平台',
     desc: '多平台项目实战经验，覆盖主控开发到端侧 AI 部署',
-    tags: ['STM32 F103/F407', 'MSPM0G3507', 'K230 端侧 AI 芯片'],
+    tags: ['STM32 F103/F407', 'MSPM0G3507', 'ESP32', 'K230 端侧 AI 芯片'],
   },
   {
     icon: '🐍',
@@ -54,6 +54,12 @@ export const skills = [
     tags: ['YOLOv12 训练', 'K230 端侧部署', '运动模糊增强', '多帧置信度滤波'],
   },
   {
+    icon: '⚡',
+    name: '实时系统与识别',
+    desc: 'RTOS 任务调度与无线识别应用开发',
+    tags: ['FreeRTOS', 'RFID'],
+  },
+  {
     icon: '🔩',
     name: '硬件技能',
     desc: '从原理图到成品的硬件全流程能力',
@@ -74,9 +80,11 @@ export const projects = [
     desc: '设计移动平台实现小车循迹运动的同时，通过视觉系统采集数据并控制小球在平台上保持平衡。负责视觉数据采集与标注、底层循迹 PID 驱动与平衡控制参数整定，获省级二等奖。',
     tags: ['视觉采集', '循迹 PID', '平衡控制', '省二等奖'],
     role: '核心成员 · 2026.07 - 2026.08',
-    image: aiImage(
-      'Engineering demo photo: a small wheeled robot car carrying a flat balance platform with a white ball held steady at the center, camera module mounted above, electronics laboratory bench, bright clean lighting, product photography',
-    ),
+    image: 'media/h2026-cover.jpg',
+    detail: {
+      title: '车载平衡滚球运动控制系统核心技术展示',
+      video: 'media/h2026-demo.mp4',
+    },
   },
   {
     name: '电赛 E 题——移动循迹激光打靶系统',
