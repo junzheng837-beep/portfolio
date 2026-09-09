@@ -23,8 +23,8 @@ export default function About() {
               </p>
               <p>
                 熟悉 STM32 / MSPM0G3507 / ESP32 / K230
-                多平台开发，掌握 I2C、SPI、UART 通信协议以及 WiFi、2.4G
-                无线数据链路，熟悉 FreeRTOS 实时系统与 RFID
+                多平台开发，掌握 I2C、SPI、UART、CAN 通信协议以及 WiFi、2.4G
+                无线数据链路与 4G 通信，熟悉 FreeRTOS 实时系统与 RFID
                 应用；控制方面擅长串级 PID、互补滤波与卡尔曼滤波姿态解算、多传感器融合；并能将
                 YOLOv12 模型训练后部署到 K230
                 端侧芯片，实现边缘 AI 识别。
