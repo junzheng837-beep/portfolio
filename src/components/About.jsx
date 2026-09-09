@@ -57,10 +57,6 @@ export default function About() {
                 <span className="about-info-label">年级</span>
                 <span className="about-info-value">{profile.grade}</span>
               </div>
-              <div className="about-info-item">
-                <span className="about-info-label">专业排名</span>
-                <span className="about-info-value">{profile.rank}</span>
-              </div>
             </div>
           </Reveal>
         </div>
